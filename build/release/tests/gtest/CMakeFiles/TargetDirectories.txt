@@ -1,0 +1,8 @@
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/install/strip.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/install/local.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/edit_cache.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/gtest_main.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/list_install_components.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/gtest.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/rebuild_cache.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/tests/gtest/CMakeFiles/install.dir

@@ -1,0 +1,679 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2f0a/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_f2f0a.dir/build.make CMakeFiles/cmTC_f2f0a.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2f0a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_f2f0a.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f2f0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2f0a.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_f2f0a.dir/CheckSymbolExists.c.o  -o cmTC_f2f0a 
+CMakeFiles/cmTC_f2f0a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f2f0a.dir/build.make:97: recipe for target 'cmTC_f2f0a' failed
+make[2]: *** [cmTC_f2f0a] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f2f0a/fast' failed
+make[1]: *** [cmTC_f2f0a/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function memset_s exists in the c failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f187/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7f187.dir/build.make CMakeFiles/cmTC_7f187.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f187.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=memset_s   -o CMakeFiles/cmTC_7f187.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7f187
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f187.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=memset_s    -rdynamic CMakeFiles/cmTC_7f187.dir/CheckFunctionExists.c.o  -o cmTC_7f187  -L/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/string.h -Wl,-rpath,/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/string.h -lc 
+CMakeFiles/cmTC_7f187.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `memset_s'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f187.dir/build.make:97: recipe for target 'cmTC_7f187' failed
+make[2]: *** [cmTC_7f187] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7f187/fast' failed
+make[1]: *** [cmTC_7f187/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file iphlpapi.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8cd59/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8cd59.dir/build.make CMakeFiles/cmTC_8cd59.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cd59.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_8cd59.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: iphlpapi.h: No such file or directory
+ #include <iphlpapi.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_8cd59.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8cd59.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_8cd59.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8cd59/fast' failed
+make[1]: *** [cmTC_8cd59/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file login_cap.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7029/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b7029.dir/build.make CMakeFiles/cmTC_b7029.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7029.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_b7029.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: login_cap.h: No such file or directory
+ #include <login_cap.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_b7029.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b7029.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_b7029.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b7029/fast' failed
+make[1]: *** [cmTC_b7029/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/sha2.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6a9b4/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6a9b4.dir/build.make CMakeFiles/cmTC_6a9b4.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a9b4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_6a9b4.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/sha2.h: No such file or directory
+ #include <sys/sha2.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_6a9b4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6a9b4.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_6a9b4.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6a9b4/fast' failed
+make[1]: *** [cmTC_6a9b4/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file vfork.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_259d3/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_259d3.dir/build.make CMakeFiles/cmTC_259d3.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_259d3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_259d3.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: vfork.h: No such file or directory
+ #include <vfork.h>
+          ^~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_259d3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_259d3.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_259d3.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_259d3/fast' failed
+make[1]: *** [cmTC_259d3/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_51f52/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_51f52.dir/build.make CMakeFiles/cmTC_51f52.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51f52.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_51f52.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+          ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_51f52.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_51f52.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_51f52.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_51f52/fast' failed
+make[1]: *** [cmTC_51f52/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file winsock2.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3bc5/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_d3bc5.dir/build.make CMakeFiles/cmTC_d3bc5.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3bc5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_d3bc5.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_d3bc5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d3bc5.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_d3bc5.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d3bc5/fast' failed
+make[1]: *** [cmTC_d3bc5/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file ws2tcpip.h exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4dd19/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4dd19.dir/build.make CMakeFiles/cmTC_4dd19.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4dd19.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_4dd19.dir/CheckIncludeFile.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: ws2tcpip.h: No such file or directory
+ #include <ws2tcpip.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_4dd19.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4dd19.dir/CheckIncludeFile.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_4dd19.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4dd19/fast' failed
+make[1]: *** [cmTC_4dd19/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function _beginthreadex exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bed38/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bed38.dir/build.make CMakeFiles/cmTC_bed38.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bed38.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=_beginthreadex   -o CMakeFiles/cmTC_bed38.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bed38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bed38.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=_beginthreadex    -rdynamic CMakeFiles/cmTC_bed38.dir/CheckFunctionExists.c.o  -o cmTC_bed38 
+CMakeFiles/cmTC_bed38.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_beginthreadex'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bed38.dir/build.make:97: recipe for target 'cmTC_bed38' failed
+make[2]: *** [cmTC_bed38] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bed38/fast' failed
+make[1]: *** [cmTC_bed38/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function arc4random exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_946d7/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_946d7.dir/build.make CMakeFiles/cmTC_946d7.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_946d7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=arc4random   -o CMakeFiles/cmTC_946d7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_946d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_946d7.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=arc4random    -rdynamic CMakeFiles/cmTC_946d7.dir/CheckFunctionExists.c.o  -o cmTC_946d7 
+CMakeFiles/cmTC_946d7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `arc4random'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_946d7.dir/build.make:97: recipe for target 'cmTC_946d7' failed
+make[2]: *** [cmTC_946d7] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_946d7/fast' failed
+make[1]: *** [cmTC_946d7/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function arc4random_uniform exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_776a7/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_776a7.dir/build.make CMakeFiles/cmTC_776a7.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_776a7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=arc4random_uniform   -o CMakeFiles/cmTC_776a7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_776a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_776a7.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=arc4random_uniform    -rdynamic CMakeFiles/cmTC_776a7.dir/CheckFunctionExists.c.o  -o cmTC_776a7 
+CMakeFiles/cmTC_776a7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `arc4random_uniform'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_776a7.dir/build.make:97: recipe for target 'cmTC_776a7' failed
+make[2]: *** [cmTC_776a7] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_776a7/fast' failed
+make[1]: *** [cmTC_776a7/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function ioctlsocket exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b16a/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0b16a.dir/build.make CMakeFiles/cmTC_0b16a.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b16a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=ioctlsocket   -o CMakeFiles/cmTC_0b16a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0b16a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b16a.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=ioctlsocket    -rdynamic CMakeFiles/cmTC_0b16a.dir/CheckFunctionExists.c.o  -o cmTC_0b16a 
+CMakeFiles/cmTC_0b16a.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `ioctlsocket'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0b16a.dir/build.make:97: recipe for target 'cmTC_0b16a' failed
+make[2]: *** [cmTC_0b16a] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0b16a/fast' failed
+make[1]: *** [cmTC_0b16a/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setusercontent exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8062e/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8062e.dir/build.make CMakeFiles/cmTC_8062e.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8062e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=setusercontent   -o CMakeFiles/cmTC_8062e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8062e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8062e.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=setusercontent    -rdynamic CMakeFiles/cmTC_8062e.dir/CheckFunctionExists.c.o  -o cmTC_8062e 
+CMakeFiles/cmTC_8062e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `setusercontent'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8062e.dir/build.make:97: recipe for target 'cmTC_8062e' failed
+make[2]: *** [cmTC_8062e] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8062e/fast' failed
+make[1]: *** [cmTC_8062e/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0f70/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a0f70.dir/build.make CMakeFiles/cmTC_a0f70.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0f70.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_a0f70.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a0f70
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0f70.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_a0f70.dir/CheckFunctionExists.c.o  -o cmTC_a0f70 
+CMakeFiles/cmTC_a0f70.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a0f70.dir/build.make:97: recipe for target 'cmTC_a0f70' failed
+make[2]: *** [cmTC_a0f70] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a0f70/fast' failed
+make[1]: *** [cmTC_a0f70/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_efa28/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_efa28.dir/build.make CMakeFiles/cmTC_efa28.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_efa28.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_efa28.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_efa28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efa28.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_efa28.dir/CheckFunctionExists.c.o  -o cmTC_efa28 
+CMakeFiles/cmTC_efa28.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_efa28.dir/build.make:97: recipe for target 'cmTC_efa28' failed
+make[2]: *** [cmTC_efa28] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_efa28/fast' failed
+make[1]: *** [cmTC_efa28/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the PTHREAD_PRIO_INHERIT exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fcb3/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_1fcb3.dir/build.make CMakeFiles/cmTC_1fcb3.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fcb3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_1fcb3.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
+   return ((int*)(&PTHREAD_PRIO_INHERIT))[argc];
+                  ^
+CMakeFiles/cmTC_1fcb3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1fcb3.dir/CheckSymbolExists.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_1fcb3.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1fcb3/fast' failed
+make[1]: *** [cmTC_1fcb3/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PTHREAD_PRIO_INHERIT
+  return ((int*)(&PTHREAD_PRIO_INHERIT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_rwlock_t exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_968a2/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_968a2.dir/build.make CMakeFiles/cmTC_968a2.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_968a2.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_968a2.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: expected expression before ‘pthread_rwlock_t’
+   return ((int*)(&pthread_rwlock_t))[argc];
+                   ^~~~~~~~~~~~~~~~
+CMakeFiles/cmTC_968a2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_968a2.dir/CheckSymbolExists.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_968a2.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_968a2/fast' failed
+make[1]: *** [cmTC_968a2/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_rwlock_t
+  return ((int*)(&pthread_rwlock_t))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_spinlock_t exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f6af5/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_f6af5.dir/build.make CMakeFiles/cmTC_f6af5.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6af5.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_f6af5.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: expected expression before ‘pthread_spinlock_t’
+   return ((int*)(&pthread_spinlock_t))[argc];
+                   ^~~~~~~~~~~~~~~~~~
+CMakeFiles/cmTC_f6af5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f6af5.dir/CheckSymbolExists.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_f6af5.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f6af5/fast' failed
+make[1]: *** [cmTC_f6af5/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_spinlock_t
+  return ((int*)(&pthread_spinlock_t))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SSL_COMP_get_compression_methods exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aabc4/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_aabc4.dir/build.make CMakeFiles/cmTC_aabc4.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aabc4.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_aabc4.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_aabc4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aabc4.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC     -rdynamic CMakeFiles/cmTC_aabc4.dir/CheckSymbolExists.c.o  -o cmTC_aabc4 
+CMakeFiles/cmTC_aabc4.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `SSL_COMP_get_compression_methods'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_aabc4.dir/build.make:97: recipe for target 'cmTC_aabc4' failed
+make[2]: *** [cmTC_aabc4] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_aabc4/fast' failed
+make[1]: *** [cmTC_aabc4/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/ssl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SSL_COMP_get_compression_methods
+  return ((int*)(&SSL_COMP_get_compression_methods))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function EVP_MD_CTX_new exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d74ee/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_d74ee.dir/build.make CMakeFiles/cmTC_d74ee.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d74ee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=EVP_MD_CTX_new   -o CMakeFiles/cmTC_d74ee.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d74ee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d74ee.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=EVP_MD_CTX_new    -rdynamic CMakeFiles/cmTC_d74ee.dir/CheckFunctionExists.c.o  -o cmTC_d74ee /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
+CMakeFiles/cmTC_d74ee.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `EVP_MD_CTX_new'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d74ee.dir/build.make:99: recipe for target 'cmTC_d74ee' failed
+make[2]: *** [cmTC_d74ee] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d74ee/fast' failed
+make[1]: *** [cmTC_d74ee/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the LIBRESSL_VERSION_TEXT exist failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6da2c/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6da2c.dir/build.make CMakeFiles/cmTC_6da2c.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6da2c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTC_6da2c.dir/CheckSymbolExists.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘LIBRESSL_VERSION_TEXT’ undeclared (first use in this function); did you mean ‘OPENSSL_VERSION_TEXT’?
+   return ((int*)(&LIBRESSL_VERSION_TEXT))[argc];
+                   ^~~~~~~~~~~~~~~~~~~~~
+                   OPENSSL_VERSION_TEXT
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_6da2c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6da2c.dir/CheckSymbolExists.c.o' failed
+make[2]: *** [CMakeFiles/cmTC_6da2c.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6da2c/fast' failed
+make[1]: *** [cmTC_6da2c/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+File /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/opensslv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef LIBRESSL_VERSION_TEXT
+  return ((int*)(&LIBRESSL_VERSION_TEXT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the -Wl,-z,noexecheap linker flag is suppored failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b4670/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b4670.dir/build.make CMakeFiles/cmTC_b4670.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4670.dir/CheckLinkerFlag.c.o
+/usr/bin/cc   -Wl,-z,noexecheap    -Wl,-z,noexecheap -o CMakeFiles/cmTC_b4670.dir/CheckLinkerFlag.c.o   -c /home/ramprasath/Downloads/monero/fork/monero_fork/cmake/CheckLinkerFlag.c
+Linking C executable cmTC_b4670
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4670.dir/link.txt --verbose=1
+/usr/bin/cc -Wl,-z,noexecheap     -rdynamic CMakeFiles/cmTC_b4670.dir/CheckLinkerFlag.c.o  -o cmTC_b4670 
+/usr/bin/ld: warning: -z noexecheap ignored.
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function rl_copy_text exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9a803/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_9a803.dir/build.make CMakeFiles/cmTC_9a803.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a803.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_copy_text   -o CMakeFiles/cmTC_9a803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9a803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a803.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_copy_text    -rdynamic CMakeFiles/cmTC_9a803.dir/CheckFunctionExists.c.o  -o cmTC_9a803 
+CMakeFiles/cmTC_9a803.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `rl_copy_text'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9a803.dir/build.make:97: recipe for target 'cmTC_9a803' failed
+make[2]: *** [cmTC_9a803] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9a803/fast' failed
+make[1]: *** [cmTC_9a803/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function rl_filename_completion_function exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bcaca/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bcaca.dir/build.make CMakeFiles/cmTC_bcaca.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcaca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_filename_completion_function   -o CMakeFiles/cmTC_bcaca.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bcaca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcaca.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_filename_completion_function    -rdynamic CMakeFiles/cmTC_bcaca.dir/CheckFunctionExists.c.o  -o cmTC_bcaca 
+CMakeFiles/cmTC_bcaca.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `rl_filename_completion_function'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bcaca.dir/build.make:97: recipe for target 'cmTC_bcaca' failed
+make[2]: *** [cmTC_bcaca] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bcaca/fast' failed
+make[1]: *** [cmTC_bcaca/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function rl_copy_text exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_11c75/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_11c75.dir/build.make CMakeFiles/cmTC_11c75.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11c75.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_copy_text   -o CMakeFiles/cmTC_11c75.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_11c75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11c75.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_copy_text    -rdynamic CMakeFiles/cmTC_11c75.dir/CheckFunctionExists.c.o  -o cmTC_11c75 
+CMakeFiles/cmTC_11c75.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `rl_copy_text'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_11c75.dir/build.make:97: recipe for target 'cmTC_11c75' failed
+make[2]: *** [cmTC_11c75] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_11c75/fast' failed
+make[1]: *** [cmTC_11c75/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function rl_filename_completion_function exists failed with the following output:
+Change Dir: /home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cdeaa/fast"
+make[1]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_cdeaa.dir/build.make CMakeFiles/cmTC_cdeaa.dir/build
+make[2]: Entering directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cdeaa.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_filename_completion_function   -o CMakeFiles/cmTC_cdeaa.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cdeaa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdeaa.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -fno-strict-aliasing -maes -std=c11 -D_GNU_SOURCE   -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Wno-error=extra -Wno-error=deprecated-declarations -Wno-unused-parameter -Wno-unused-variable -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=cpp -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native  -fPIC  -Wformat -Wformat-security -fstack-protector -fstack-protector-strong -fno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rl_filename_completion_function    -rdynamic CMakeFiles/cmTC_cdeaa.dir/CheckFunctionExists.c.o  -o cmTC_cdeaa 
+CMakeFiles/cmTC_cdeaa.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `rl_filename_completion_function'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cdeaa.dir/build.make:97: recipe for target 'cmTC_cdeaa' failed
+make[2]: *** [cmTC_cdeaa] Error 1
+make[2]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cdeaa/fast' failed
+make[1]: *** [cmTC_cdeaa/fast] Error 2
+make[1]: Leaving directory '/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/CMakeTmp'
+
+

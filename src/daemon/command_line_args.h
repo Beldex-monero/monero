@@ -91,10 +91,7 @@ namespace daemon_args
   , 0
   };
    
-  const command_line::arg_descriptor<unsigned> arg_print_genesis_tx_hex = {
-    "print_genesis_tx_hex"
-  , "print genisis hex"
-  };
+
 
   const command_line::arg_descriptor<std::string> arg_zmq_rpc_bind_ip   = {
     "zmq-rpc-bind-ip"

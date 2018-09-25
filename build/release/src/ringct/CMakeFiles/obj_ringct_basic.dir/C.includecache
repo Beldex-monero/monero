@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../src/crypto/crypto-ops.h
+
+/home/ramprasath/Downloads/monero/fork/monero_fork/src/ringct/rctCryptoOps.c
+assert.h
+-
+stdint.h
+-
+crypto/crypto-ops.h
+/home/ramprasath/Downloads/monero/fork/monero_fork/src/ringct/crypto/crypto-ops.h
+

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header-complete.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-install.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-mkdir.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-download.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-update.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-patch.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-configure.rule"
+		},
+		{
+			"file" : "/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"generate_translations_header"
+		],
+		"name" : "generate_translations_header"
+	}
+}

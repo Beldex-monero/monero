@@ -1,0 +1,3 @@
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/translations/CMakeFiles/rebuild_cache.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/translations/CMakeFiles/generate_translations_header.dir
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/translations/CMakeFiles/edit_cache.dir

@@ -1,0 +1,13 @@
+# Target labels
+ generate_translations_header
+# Source files and their labels
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/CMakeFiles/generate_translations_header-complete.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-install.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-mkdir.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-download.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-update.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-patch.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-configure.rule
+/home/ramprasath/Downloads/monero/fork/monero_fork/build/release/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-build.rule

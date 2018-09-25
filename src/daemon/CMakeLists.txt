@@ -106,5 +106,5 @@ target_link_libraries(daemon
     ${EXTRA_LIBRARIES})
 set_property(TARGET daemon
   PROPERTY
-    OUTPUT_NAME "rammonerod")
+    OUTPUT_NAME "bdxd")
 install(TARGETS daemon DESTINATION bin)
